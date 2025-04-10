@@ -4,9 +4,11 @@ layout: default
 title: Namita Verma
 ---
 
-**Senior Software Quality Assurance Engineer**
+**Lead Quality Assurance Engineer**
 
 [LinkedIn Profile](https://www.linkedin.com/in/namita-verma-p)
+
+![Alt Text](assets/image1.png)
 
 ## About Me
 
