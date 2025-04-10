@@ -1,4 +1,8 @@
 # Namita Verma
+---
+layout: default
+title: Namita Verma
+---
 
 **Senior Software Quality Assurance Engineer**
 
