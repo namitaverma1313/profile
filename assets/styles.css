@@ -1,10 +1,13 @@
+/* General body styling */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
+/* Header styling */
 header {
   background-color: #4CAF50;
   color: white;
@@ -12,15 +15,67 @@ header {
   text-align: center;
 }
 
+/* Navbar styling */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #4CAF50;
+}
+
+
+/* Main title */
 h1 {
   font-size: 36px;
 }
 
+/* Section styling */
 section {
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* About section */
+.about {
+  text-align: center;
+}
+
+/* Image styling */
+.about img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Skills list */
 .skills ul {
   list-style-type: none;
   padding: 0;
@@ -30,16 +85,50 @@ section {
   background: #eee;
   padding: 10px;
   margin: 5px 0;
+  border-radius: 5px;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 10px;
+/* Contact section */
+.contact ul {
+  list-style-type: none;
+  padding: 0;
 }
 
+.contact li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 10px;
   background-color: #333;
   color: white;
+  margin-top: 40px;
 }
+
+/*screen resolution*/
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .about img {
+    max-width: 200px;
+  }
+}
+
