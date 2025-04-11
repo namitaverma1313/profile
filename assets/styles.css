@@ -127,6 +127,22 @@ section {
   text-decoration: underline;
 }
 
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005f99;
+}
+
+
 /* Footer */
 footer {
   text-align: center;
