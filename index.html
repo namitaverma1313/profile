@@ -42,7 +42,7 @@
 
 <section class="resume">
     <h2>My Resume</h2>
-    <a href="Namita_Verma_Resume.pdf" target="_blank" class="resume-button">📄 View My Resume</a>
+    <a href="Namita_Verma_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">📄 View My Resume</a>
 </section>
 
 <section class="skills" id="skills">
@@ -102,8 +102,8 @@
                 <p>AWS</p>
             </div>
             <div class="skill-card">
-                <img src="assets/skills/azure.jpeg" alt="AWS">
-                <p>AWS</p>
+                <img src="assets/skills/azure.jpeg" alt="Azure">
+                <p>Azure</p>
             </div>
             <div class="skill-card">
                 <img src="assets/skills/gitlab.png" alt="GitLab">
@@ -174,14 +174,14 @@
     <h2>Contact</h2>
     <ul>
         <li><strong>Email:</strong> namitaverma13@yahoo.com</li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/namita-verma-p" target="_blank">Namita Verma</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/namitaverma1313" target="_blank">namitaverma1313</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/namita-verma-p" target="_blank" rel="noopener noreferrer">Namita Verma</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/namitaverma1313" target="_blank" rel="noopener noreferrer">namitaverma1313</a></li>
         <li><strong>Location:</strong> California (Pacific Time Zone)</li>
     </ul>
 </section>
 
 <footer>
-    <p>© 2025 Namita Verma</p>
+    <p>© 2025 Namita Verma . All rights reserved.</p>
 </footer>
 
 <!-- ScrollReveal CDN -->
@@ -203,6 +203,18 @@
       easing: 'ease-in-out',
       interval: 200,
       reset: false
+    });
+</script>
+
+<script>
+    const skillGrids = document.querySelectorAll('.skills-grid');
+    skillGrids.forEach(skillGrid => {
+      const cardCount = skillGrid.querySelectorAll('.skill-card').length;
+      if (cardCount === 2) {
+        skillGrid.classList.add('two-cards');
+      } else {
+        skillGrid.classList.remove('two-cards');
+      }
     });
 </script>
 
