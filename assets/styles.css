@@ -253,6 +253,10 @@ section {
   color: #555;
 }
 
+.experience-card:nth-child(n+4) {
+  display: none;
+}
+
 /* Footer */
 footer {
   text-align: center;
